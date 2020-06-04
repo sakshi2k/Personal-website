@@ -1,0 +1,59 @@
+.icon-bar {
+    position: relative;
+    top: -100pt;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar {
+    border-radius: 3px;
+    margin-left: 1180px;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    transition: all 0.25s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    opacity: 100%;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a{ 
+    color: white;
+  }
+
+  .icon-bar a :hover { 
+    padding : 10px;
+  }
+
+  .whatsapp :hover{
+    background: white;
+    color: rgb(11, 119, 103);
+  }
+
+  .facebook :hover{
+    background: #3B5998;
+    color: white;
+  }
+    
+  .github :hover{
+    background: black;
+    color: white;
+  }
+  
+  .linkedin :hover{
+    background: #007bb5;
+    color: white;
+  }
+  
+  .behance :hover{
+    background: #bb0000;
+    color: white;
+  }
