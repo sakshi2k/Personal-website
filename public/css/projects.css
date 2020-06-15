@@ -1,0 +1,14 @@
+.card-title {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#to-github{
+    font-size: 25pt;
+    padding-left: 20px;
+    color: rgb(71, 71, 71);
+}
+
+#to-app {
+    margin-top: -10px;
+}

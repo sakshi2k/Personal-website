@@ -1,5 +1,15 @@
+/* .header_area{
+    position: sticky;
+    top: 5pt;
+} */
+
 .navbar {
     margin-right: 90px;
+}
+
+.navbar-scrolled {
+    --text : white;
+    --background : black;
 }
 
 .nav-item{
