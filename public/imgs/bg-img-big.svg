@@ -1,21 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1279.999" height="691.163" viewBox="0 0 1279.999 691.163">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1279.998" height="691.163" viewBox="0 0 1279.998 691.163">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="1.995" y2="0.439" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#0da08a"/>
+      <stop offset="0" stop-color="#0d8ca0"/>
       <stop offset="1" stop-color="#075045"/>
     </linearGradient>
   </defs>
   <g id="bg-img-big" transform="translate(-46.379 -102.178)">
-    <path id="Path_19" data-name="Path 19" d="M1255.064,51.883V49.862H271.616V0h-3.84V49.862H139.613v2.021H267.777V99.041H139.613v2.021H267.777V148.22H139.613v2.021H267.777V197.4H139.613v2.021H267.777v47.157H139.613V248.6H267.777v47.158H139.613v2.021H267.777v47.157H139.613v2.021H267.777v47.158H139.613v2.021H267.777v47.157H139.613v2.021H267.777v47.157H139.613v2.021H267.777v47.158H139.613v2.021H267.777v47.157H139.613v2.021H267.777V640H139.613v2.021H267.777v41.158h3.84V642.023h983.448V640H271.616V592.845h983.448v-2.021H271.616V543.667h983.448v-2.021H271.616V494.488h983.448v-2.021H271.616V445.31h983.448v-2.021H271.616V396.133h983.448v-2.021H271.616V346.954h983.448v-2.021H271.616V297.776h983.448v-2.021H271.616V248.6h983.448v-2.021H271.616V199.419h983.448V197.4H271.616V150.241h983.448V148.22H271.616V101.062h983.448V99.041H271.616V51.883Z" transform="translate(-93.234 110.161)" fill="#e2e2e2" opacity="0.88"/>
-    <path id="Path_258" data-name="Path 258" d="M-11821.014,3167h726.349v691.163h-383.344Z" transform="translate(12421.043 -3064.822)" fill="url(#linear-gradient)"/>
-    <text id="SAKSHI_CHOUDHARY_." data-name="SAKSHI 
-CHOUDHARY ." transform="translate(211.916 302.011)" fill="#00a78e" font-size="37" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700"><tspan x="0" y="0">SAKSHI </tspan><tspan x="0" y="32">CHOUDHARY</tspan><tspan y="32" fill="#cbf35c" font-family="ComicSansMS, Comic Sans MS" font-weight="400"> </tspan><tspan y="32" fill="#707070" font-family="ComicSansMS, Comic Sans MS" font-weight="400">.</tspan></text>
-    <text id="I_am_a_Full_Stack_Web_Developer_UI_UX_Developer_Freelancer_a_Machine_Learning_Enthusiast._" data-name="I am a Full Stack Web Developer,
-UI/UX Developer, Freelancer
-&amp; a Machine Learning Enthusiast.
-" transform="translate(211.916 441.011)" fill="#707070" font-size="23" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">I am a Full Stack Web Developer,</tspan><tspan x="0" y="38">UI/UX Developer, Freelancer</tspan><tspan x="0" y="76">&amp; a Machine Learning Enthusiast.</tspan><tspan x="0" y="114"></tspan></text>
-    <text id="HEY_It_s_" data-name="HEY, It&apos;s " transform="translate(213.891 243.011)" fill="#6d6d6d" font-size="20" font-family="Calibri-Bold, Calibri" font-weight="700"><tspan x="0" y="0">HEY, It&apos;s </tspan></text>
-    <g id="Group_23" data-name="Group 23" transform="translate(667.061 273.354)" style="isolation: isolate">
+    <path id="Path_19" data-name="Path 19" d="M1255.064,50.715V48.739H271.616V0h-3.84V48.739H139.613v1.976H267.777v46.1H139.613v1.976H267.777v46.1H139.613v1.976H267.777v46.095H139.613v1.976H267.777v46.095H139.613V243H267.777v46.1H139.613v1.976H267.777v46.095H139.613v1.976H267.777v46.1H139.613v1.976H267.777v46.095H139.613v1.976H267.777v46.095H139.613v1.976H267.777v46.1H139.613v1.976H267.777v46.095H139.613v1.976H267.777V625.59H139.613v1.976H267.777V667.8h3.84V627.566h983.448V625.59H271.616V579.495h983.448v-1.976H271.616V531.425h983.448v-1.976H271.616v-46.1h983.448v-1.976H271.616V435.283h983.448v-1.976H271.616V387.212h983.448v-1.976H271.616v-46.1h983.448v-1.976H271.616V291.07h983.448v-1.976H271.616V243h983.448v-1.976H271.616V194.928h983.448v-1.976H271.616V146.858h983.448v-1.976H271.616v-46.1h983.448V96.811H271.616v-46.1Z" transform="translate(-93.234 102.178)" fill="#e2e2e2" opacity="0.88"/>
+    <path id="Path_258" data-name="Path 258" d="M-11821.015,3167h794.262v691.163h-419.187Z" transform="translate(12353.13 -3064.822)" fill="url(#linear-gradient)"/>
+    <g id="Group_23" data-name="Group 23" transform="translate(634.061 282.354)" style="isolation: isolate">
       <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="124.924" cy="6.87" rx="124.924" ry="6.87" transform="translate(23.25 382.283)" fill="#3f3d56"/>
       <ellipse id="Ellipse_57" data-name="Ellipse 57" cx="10.469" cy="11.389" rx="10.469" ry="11.389" transform="translate(16.249 330.606)" fill="#bc8465" opacity="0.84"/>
       <ellipse id="Ellipse_58" data-name="Ellipse 58" cx="7.344" cy="7.989" rx="7.344" ry="7.989" transform="translate(0 339.445)" fill="#e4cec1"/>

@@ -1,6 +1,6 @@
 .icon-bar {
     position: relative;
-    top: -100pt;
+    top: -120pt;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -8,7 +8,7 @@
   
   .icon-bar {
     border-radius: 3px;
-    margin-left: 1180px;
+    margin-left: 1100px;
   }
   
   /* Style the icon bar links */
