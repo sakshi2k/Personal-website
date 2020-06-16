@@ -1,12 +1,39 @@
-.view-area {
-    background-image: url('../imgs/bg-img-big.svg');
+.view-area1 {
+    background-image: url('../imgs/bg-img3.png');
+}
+
+.view-area2 {
+    background-image: url('../imgs/bg-img2.svg');
+}
+
+.view-area1, .view-area2{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
     height: 600px;
     /* height: 100vh; */
     margin-bottom: 60pt;
-}  
+} 
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: rgb(73, 73, 73);
+    padding : 20px 10px;
+}
+
+.carousel-control-prev-icon{
+    margin-left: -25px;
+}
+
+.carousel-control-next-icon{
+    margin-right: -25px;
+}
+
+/* Skill-section */
+
+.skill-section {
+    margin-top: 10pt;
+}
 
 #aboutMeImg{
     margin: 20px 10px;
@@ -43,6 +70,14 @@
     font-style: normal;
     margin : -5px 0px;
     margin-left: -2px;
+}
+
+#myImg {
+    margin-top: 10%;
+    margin-right: 4%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 #about-text {
@@ -84,7 +119,7 @@
 
 .progress-bar{
     margin: 4px;
-    margin-left: 2px;
+    margin-left: 6px;
     border-radius: 2%;    
     background-color : #0EA698;
 }

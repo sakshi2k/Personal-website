@@ -2,28 +2,71 @@
 
 <body>
     <!-- Main Viewport -->
-    <!-- <div class=""> -->
-      <div class="row">
-        <div class="view-area col-md-12 col-md-12 col-sm-12">
-          <%- include('partials/navbar') -%>
-            <div id="name-div">
-              <h6 id="hi-msg">HEY, It's </h6>
-              <h6 id="name-text">SAKSHI</h6>
-              <h6 id="name-text">CHOUDHARY</h6>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2400">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row view-area1">
+            <div class="col-md-12 col-md-12 col-sm-12">
+              <%- include('partials/navbar') -%>
+                <div id="name-div">
+                  <h6 id="hi-msg">HEY, It's </h6>
+                  <h6 id="name-text">SAKSHI</h6>
+                  <h6 id="name-text">CHOUDHARY</h6>
+                </div>
+              <!-- <img src="imgs/me.jpeg" id="myImg" alt="me"> -->
+                <p id="about-text">I am a Full Stack Web Developer,
+                  UI/UX Developer, Freelancer
+                  & a Machine Learning Enthusiast.
+                  </p>
+                <a href="/resume" class="btn btn-secondary">Resume</a>
+              <%- include('partials/social-icons'); -%>
             </div>
-            <p id="about-text">I am a Full Stack Web Developer,
-              UI/UX Developer, Freelancer
-              & a Machine Learning Enthusiast.
-              </p>
-            <button class="btn btn-secondary">Resume</button>
-          <%- include('partials/social-icons'); -%>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="view-area2 col-md-12 col-md-12 col-sm-12">
+              <%- include('partials/navbar') -%>
+                <div id="name-div">
+                  <h6 id="hi-msg">HEY, It's</h6>
+                  <h6 id="name-text">SAKSHI</h6>
+                  <h6 id="name-text">CHOUDHARY</h6>
+                </div>
+                <p id="about-text">I am a Full Stack Web Developer,
+                  UI/UX Developer, Freelancer
+                  & a Machine Learning Enthusiast.
+                  </p>
+                  <a href="/resume" class="btn btn-secondary">Resume</a>
+              <%- include('partials/social-icons'); -%>
+            </div>
+          </div>
         </div>
       </div>
-    <!-- </div> -->
+
+      <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br/><br/>
     <!-- End of main -->
 
     <!-- Skills section -->
     <div class="skill-section container">
+      <div id="aboutStart">
+        <h1 style="text-align: center;">.....</h1>
+      </div>
       <h1 id="aboutHeading" style="text-align: center;">Why You Hire Me!</h1><br/>
       <div class="row">
       <div class="aboutMeImg col-xl-5 col-lg-5 col-md-12">
@@ -58,7 +101,7 @@
         </div>
         ReactJS
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
 
@@ -79,5 +122,6 @@
     
     <!-- End of skills section -->
     <script src="../public/js/progressBar.js"></script>
-</body>
+  </body>
+  <%- include('partials/footer') -%>
 </html>

@@ -1,0 +1,16 @@
+#contactIcon {
+    padding-left: 20pt;
+}
+
+.form-control  {
+    width: 60%;
+    margin-bottom: 10pt;
+}  
+
+.inputForm {
+    margin-left: 50pt;
+}
+
+.btn-submit{
+    margin-left: -1pt;
+}
