@@ -1,16 +1,17 @@
 /*  icon-bar2 - SIDEBAR */
 
 .icon-bar {
-  position: fixed;
-  top: 300px;
+  margin-top: -300pt;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
   
 .icon-bar {
+  width: 2%;
   border-radius: 3px;
-  margin-left: 1032px;
+  text-align: right;
+  padding-left: 1010px;
 }
 
 /* Style the icon bar links */

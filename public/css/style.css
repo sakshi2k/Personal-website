@@ -22,11 +22,11 @@
 }
 
 .carousel-control-prev-icon{
-    margin-left: -25px;
+    padding-left: -25px;
 }
 
 .carousel-control-next-icon{
-    margin-right: -25px;
+    padding-right: -25px;
 }
 
 /* Skill-section */
