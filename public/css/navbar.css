@@ -6,11 +6,11 @@
 .navbar {
     margin-right: 150px;
 }
-
+/* 
 .navbar-scrolled {
     --text : white;
     --background : black;
-}
+} */
 
 .nav-item{
     margin-right: 24px;

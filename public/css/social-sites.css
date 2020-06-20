@@ -1,17 +1,14 @@
 /*  icon-bar2 - SIDEBAR */
 
 .icon-bar {
-  margin-top: -300pt;
+  margin-top: -280pt;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-  
-.icon-bar {
   width: 2%;
-  border-radius: 3px;
   text-align: right;
-  padding-left: 1010px;
+  /* padding-left: 1010px; */
+  padding-left: 80%;
 }
 
 /* Style the icon bar links */
@@ -23,7 +20,6 @@
   transition: all 0.25s ease;
   color: white;
   font-size: 20px;
-  border-radius: 3px;
   opacity: 100%;
 }
 
@@ -35,10 +31,13 @@
 
 .icon-bar a :hover { 
   padding : 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 3px;
 }
 
 .fa1-whatsapp :hover{
   background: white;
+  font-size: larger;
   color: rgb(11, 119, 103);
 }
 

@@ -1,19 +1,19 @@
-.view-area1 {
-    background-image: url('../imgs/bg-img3.png');
-}
-
-.view-area2 {
-    background-image: url('../imgs/bg-img2.svg');
-}
-
 .view-area1, .view-area2{
+    background-image: url('../imgs/bg-img.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
     height: 600px;
-    /* height: 100vh; */
     margin-bottom: 60pt;
 } 
+
+#meImg{
+    margin-top: 13%;
+}
+
+.mainText {
+    padding-top: 20pt;
+}
 
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
@@ -22,7 +22,8 @@
 }
 
 .carousel-control-prev-icon{
-    padding-left: -25px;
+    /* padding-left: -25px; */
+    margin-left: 60px;
 }
 
 .carousel-control-next-icon{
@@ -41,7 +42,7 @@
     height: 220px;
 }
 
-#aboutHeading{
+#aboutHeading, #achievmentsHeading{
     color: rgb(17, 30, 65);
 }
 
@@ -124,6 +125,29 @@
     background-color : #0EA698;
 }
 
+/* Project section */
+/* .achievmentsSection {
+    background-image: url("https://images.pexels.com/photos/6945/sunset-summer-golden-hour-paul-filitchkin.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.achImg {
+    border-radius: 2%;
+}
+
+.card-item {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+#achLinks {
+    text-decoration: none;
+}
 /* animated bar css */
 /* .spinner-border {
     border-width: .2em;
