@@ -1,7 +1,3 @@
-body {
-    background-color: tomato;
-}
-
 .view-area1, .view-area2{
     background-image: url('../imgs/bg-img.png');
     background-size: cover;
