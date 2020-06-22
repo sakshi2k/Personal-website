@@ -1,5 +1,5 @@
-body{
-    /* background-color: rgb(153, 22, 22) */
+body {
+    background-color: tomato;
 }
 
 .view-area1, .view-area2{
@@ -194,7 +194,7 @@ body{
     .mainText{
         margin: 0px;
     }
-    
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -202,7 +202,7 @@ body{
     #hi-msg, #name-text{
         text-align: center;
     } 
-    
+
     .icon-bar { 
         display: none;
     }
@@ -212,13 +212,25 @@ body{
     }
 
     #meImg {
-        margin-left: 28%;
-        margin-top: 10pt;
+        margin-left: 29%;
+        margin-top: 14pt;
+        margin-bottom: -12pc;
     }
     
     .btn-secondary {
         text-align: center;
         margin-left: 35%;
+    }
+
+    .mainText {
+        height: 220pt;
+    }
+
+    .progress{
+        margin: 10px;
+        width: 95%;
+        height: 22px;
+        background-color: rgb(218, 214, 214);
     }
 }
 
@@ -229,6 +241,7 @@ body{
         width: 80%;
         /* padding: 0px; */
     }
+    
     .btn-secondary {
         text-align: center;
         margin-left: 40%;
