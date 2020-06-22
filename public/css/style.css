@@ -192,7 +192,7 @@ body{
     }
 
     .mainText{
-        margin-right: 0px;
+        margin: 0px;
     }
     
 }
@@ -224,9 +224,9 @@ body{
 
 @media (max-width: 575.98px) { 
     #about-text {
-        /* text-align: center; */
-        font-size: 13px;
-        width: 300px;
+        text-align: center;
+        font-size: 18px;
+        width: 80%;
         /* padding: 0px; */
     }
     .btn-secondary {
