@@ -2,11 +2,8 @@
 
 <body>
     <!-- Main Viewport -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2400">
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-        </ol> -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -18,7 +15,7 @@
             <div class="view-area1">
               <%- include('partials/navbar') -%>
               <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 mainText">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mainText">
                     <div id="name-div">
                       <h6 id="hi-msg">HEY, It's </h6>
                       <h6 id="name-text">SAKSHI</h6>
@@ -30,7 +27,7 @@
                       </p>
                     <a href="/resume" class="btn btn-secondary">Resume</a>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 imgDiv">
                   <img src="imgs/me.jpeg" alt="me" width="200px" height="350px" id="meImg" style="border-radius: 7%;">
                 </div>
               </div>
@@ -41,7 +38,7 @@
             <div class="view-area1">
               <%- include('partials/navbar') -%>
               <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 mainText">
+              <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8 mainText">
                   <div id="name-div">
                     <h6 id="hi-msg">HEY, It's </h6>
                     <h6 id="name-text">SAKSHI</h6>
@@ -53,8 +50,8 @@
                     </p>
                   <a href="/resume" class="btn btn-secondary">Resume</a>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <img src="imgs/girl-stool.svg" alt="me" id="meImg" style="height: 380px;">
+              <div class="col-lg-5 col-md-4 col-sm-4 col-xs-4 imgDiv">
+                <img src="imgs/girl-stool.svg" alt="me" id="meImg" style="height: 360px;">
               </div>
             </div>
           </div>
@@ -77,41 +74,42 @@
         <h1 id="aboutHeading" style="text-align: center;">Why You Hire Me!</h1><br/>
 
         <div class="row">
-        <div class="aboutMeImg col-xl-5 col-lg-5 col-md-12">
-          <img src="imgs/aboutMe.jpg" id="aboutMeImg">
-          <p id="description">I am currently pursuing engineering and I am a FullStack Web Developer, specialised in HTML/CSS/JS and MERN technology, a Freelancer and a Machine Learning Enthusiast. I have my interests in programming and I have working knowledge of Data structures & Algorithms and OOPs concepts. I am quick and a patient learner and I try to give my best in whatever I do. </p>       
-        </div>
-    
-        <div class="col-xl-1 col-lg-1 col-md-0"></div>
-    
-        <div class="bars col-xl-5 col-lg-5 col-md-12">
-          <div class="progress_br">
-          <!-- Progress Bars -->
-          HTML / CSS / Bootstrap
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="aboutMeImg col-xl-5 col-lg-5 col-md-12">
+            <img src="imgs/aboutMe.jpg" id="aboutMeImg">
+            <p id="description">I am currently pursuing engineering and I am a FullStack Web Developer, specialised in HTML/CSS/JS and MERN technology, a Freelancer and a Machine Learning Enthusiast. I have my interests in programming and I have working knowledge of Data structures & Algorithms and OOPs concepts. I am quick and a patient learner and I try to give my best in whatever I do. </p>       
           </div>
-          JavaScript
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          NodeJS
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          MongoDB
+      
+          <div class="col-xl-1 col-lg-1 col-md-0"></div>
+      
+          <div class="bars col-xl-5 col-lg-5 col-md-12">
+            <div class="progress_br">
+            <!-- Progress Bars -->
+            HTML / CSS / Bootstrap
             <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            JavaScript
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            NodeJS
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            MongoDB
+              <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            GITHUB
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            ReactJS
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+              <br/>
           </div>
-          GITHUB
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          ReactJS
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-            <br/>
         </div>
       </div>
                         <!-- TOP BUTTON TO navigate to the top -->
@@ -164,7 +162,7 @@
     </div>
     <!-- End of achievments section -->
 
-    <%- include('partials/footer') -%>
-    <script src="../public/js/progressBar.js"></script>
+    <!-- <script src="../public/js/progressBar.js"></script> -->
   </body>
+  <%- include('partials/footer') -%>
 </html>

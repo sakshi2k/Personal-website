@@ -1,16 +1,6 @@
-/* .header_area{
-    position: sticky;
-    top: 5pt;
-} */
-
 .navbar {
-    margin-right: 150px;
+    margin-right: 100px;
 }
-/* 
-.navbar-scrolled {
-    --text : white;
-    --background : black;
-} */
 
 .nav-item{
     margin-right: 24px;

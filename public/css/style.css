@@ -1,3 +1,7 @@
+body{
+    /* background-color: rgb(153, 22, 22) */
+}
+
 .view-area1, .view-area2{
     background-image: url('../imgs/bg-img.png');
     background-size: cover;
@@ -9,6 +13,7 @@
 
 #meImg{
     margin-top: 13%;
+    margin-left: 10%;
 }
 
 .mainText {
@@ -66,7 +71,6 @@
     font-family: myriad-pro, sans-serif;
     font-size: 36px;
     font-weight: 700;
-    /* color: #0DA08A; */
     color: #0D8CA0;
     font-style: normal;
     margin : -5px 0px;
@@ -94,7 +98,7 @@
 .btn-secondary{
     margin-top: 8px;
     margin-left: 160px;
-    /* background-color: #0DA08A; */
+    background-color: #0DA08A;
     background-color: #0D8CA0;
     border: none;
 }
@@ -153,25 +157,81 @@
     border-width: .2em;
 } */
 
-/* 
-@media only screen and (min-width: 992px) {
-    .view-area {
-        background-image: url('../imgs/bg-img-big.svg');
-        width: 100%;
-        height: 600px;
-        margin-bottom: 80pt;
-    }    
-}
 
 @media only screen and (max-width: 992px) {
-    .view-area {
-        background-image: url('../imgs/bg-img-medium.svg');
-        width: 100%;
-        height: 610px;
-        margin-bottom: 20pt;
-    }    
-} */
+    #name-div{
+        margin-top: 20pt;
+        margin-left: 6%;
+        text-align: center;
+    }
 
-/* .row {
-    margin: 0px;
-} */
+    #about-text {
+        text-align: center;
+        margin-left: 10%;
+        font-size: 20px;
+        width: 380px;
+        padding: 0px;
+    }
+
+    .icon-bar { 
+        display: none;
+    }
+
+    .imgDiv {
+        padding: 0px;
+    }
+
+    #meImg {
+        /* margin-left: 35%; */
+        margin-top: 3pt;
+    }
+    
+    .btn-secondary {
+        text-align: center;
+        margin-left: 35%;
+    }
+
+    .mainText{
+        margin-right: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+
+    #hi-msg, #name-text{
+        text-align: center;
+    } 
+    
+    .icon-bar { 
+        display: none;
+    }
+
+    .imgDiv {
+        padding: 0px;
+    }
+
+    #meImg {
+        margin-left: 28%;
+        margin-top: 10pt;
+    }
+    
+    .btn-secondary {
+        text-align: center;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #about-text {
+        /* text-align: center; */
+        font-size: 13px;
+        width: 300px;
+        /* padding: 0px; */
+    }
+    .btn-secondary {
+        text-align: center;
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+}
