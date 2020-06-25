@@ -272,15 +272,10 @@ body {
 }
 
 @media (max-width: 575.98px) { 
-
-    .nav-item {
-        margin-top: -5px;
-    }
-
-    /* .carousel-control-prev, 
+    .carousel-control-prev, 
     .carousel-control-next {
-        display: none;
-    } */
+        margin-top: 420px;
+    }
 
     #name-div {
         margin-left: -6pt;
@@ -307,6 +302,10 @@ body {
     #meImg2 {
         margin-left: 90pt;
         margin-top: 5pt;
+    }
+
+    .skill-section {
+        margin-top: 20px;
     }
 }
 
