@@ -1,13 +1,23 @@
 .navbar {
-    margin-right: 120px;
+    margin-right: 200px;
+    padding-top: 20pt;
 }
 
 .nav-item{
     margin-right: 24px;
     font-size: larger;
-    color: white;
 }
 
-.nav-link{
-    color: white;
-}
+.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: -20px;
+    z-index: 2;
+    padding-bottom: 5px;
+    background-color: white;
+    width: 100%;
+  }
+
+/* .navbar-light .navbar-nav .nav-link{
+    color: rgb(255, 255, 255, 1);
+} */

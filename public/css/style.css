@@ -1,5 +1,10 @@
+body {
+    background-color: white;
+}
+
 .view-area1, .view-area2{
-    background-image: url('../imgs/bg-img.png');
+    /* background-image: url('../imgs/bg-img.png'); */
+    background-image: url('../imgs/rightBG.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
@@ -21,36 +26,39 @@
     padding-top: 20pt;
 }
 
+.carousel-control-prev, 
+.carousel-control-next {
+    margin-top: 320px;
+    width: 5px;
+    height: 5px;
+}
+
+.carousel-control-prev {
+    padding-left: 70px;
+}
+
+.carousel-control-next {
+    padding-right: 70px;    
+}
+
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
     background-color: rgb(73, 73, 73);
-    padding : 20px 10px;
-}
-
-.carousel-control-prev-icon{
-    /* padding-left: -25px; */
-    margin-left: 60px;
-}
-
-.carousel-control-next-icon{
-    padding-right: -25px;
+    padding : 18px 16px;
+    opacity: 40%;
+    border-radius: 3px;
 }
 
 /* Skill-section */
 
 .skill-section {
-    margin-top: 10pt;
+    margin-top: -50pt;
 }
 
 #aboutMeImg{
     margin: 20px 10px;
     width: 360px;
     height: 220px;
-}
-
-
-#aboutHeading, #achievmentsHeading{
-    color: rgb(17, 30, 65);
 }
 
 #name-div{
@@ -104,7 +112,7 @@
 .btn-secondary{
     margin-top: 8px;
     margin-left: 160px;
-    background-color: #0DA08A;
+    /* background-color: #0DA08A; */
     background-color: #0D8CA0;
     border: none;
 }
@@ -159,11 +167,32 @@
 #achLinks {
     text-decoration: none;
 }
-/* animated bar css */
-/* .spinner-border {
-    border-width: .2em;
-} */
 
+.scrollToTop {
+    opacity: 0;
+    position:fixed;
+    padding:10px; 
+    bottom: 25px;
+    right: 25px; 
+    text-align: center;
+    border: none;
+}
+
+/* scrollToTop Animation */
+
+.fadeIn {
+    opacity: 0;
+    background-color: #096B6E;
+    color: white;
+}
+
+.fadeOut {
+    opacity: 1;
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+
+/* Customized Styling on the basis of Screen width */
 
 @media only screen and (max-width: 992px) {
     #name-div{
@@ -244,6 +273,15 @@
 
 @media (max-width: 575.98px) { 
 
+    .nav-item {
+        margin-top: -5px;
+    }
+
+    /* .carousel-control-prev, 
+    .carousel-control-next {
+        display: none;
+    } */
+
     #name-div {
         margin-left: -6pt;
         margin-top: -5pt;
@@ -271,3 +309,13 @@
         margin-top: 5pt;
     }
 }
+
+/* Dark mode theme */
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .darkModeLightProps{
+        color: white;
+    }

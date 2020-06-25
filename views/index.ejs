@@ -1,14 +1,9 @@
 <%- include('partials/header') -%>
-
 <body>
+    
     <!-- Main Viewport -->
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+
         <div class="carousel-inner">
 
           <div class="carousel-item active">
@@ -54,18 +49,18 @@
                   <a href="/resume" class="btn btn-secondary">Resume</a>
               </div>
               <div class="col-lg-5 col-md-4 col-sm-4 col-xs-4 imgDiv">
-                <img src="imgs/girl-stool.svg" alt="me" id="meImg2" style="height: 360px;">
+                <img src="imgs/girl-stool.svg" alt="me" id="meImg2">
               </div>
             </div>
           </div>
         </div>
 
-        <!-- <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a> -->
+        </a>
       </div>
       <%- include('partials/social-icons'); -%>
       
@@ -165,8 +160,39 @@
       </div>
     </div>
     <!-- End of achievments section -->
+    <div style="text-align:right;">
+      <a href="/" class="btn btn-light btn-lg scrollToTop" role="button"><i class="fa fa-chevron-up"></i></a>
+    </div>
+  
+      <script>
+        // Navbar animation on scrolling
+        window.onscroll = function() {myFunction()};
 
-    <!-- <script src="../public/js/progressBar.js"></script> -->
-  </body>
+        var navbar = document.getElementById("navbar-example2");
+        var scrollToTop = document.querySelector(".scrollToTop");
+
+        function myFunction() {
+          if (window.pageYOffset >= 1) {
+            if ($(this).scrollTop() > 5) {
+              navbar.classList.add("sticky");
+              scrollToTop.classList.remove("fadeIn");
+              scrollToTop.classList.add("fadeOut");
+            }
+          } else {
+              navbar.classList.remove("sticky");
+              scrollToTop.classList.remove("fadeOut");
+              scrollToTop.classList.add("fadeIn");
+          }
+        
+          $('.scrollToTop').click(function(){
+            $("html, body").animate({scrollTop : 0},700);
+            return false;
+          }); 
+        }      
+      </script>
+      
+      <script src="js/workings.js"></script>
+      <script src="js/progressBar.js"></script>
+    </body>
   <%- include('partials/footer') -%>
 </html>
