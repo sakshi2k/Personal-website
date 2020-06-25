@@ -35,10 +35,11 @@
   border-radius: 3px;
 }
 
-.fa1-whatsapp :hover{
+.fa1-whatsapp :hover, .fa1-msg :hover{
   background: white;
   font-size: larger;
-  color: rgb(11, 119, 103);
+  color: rgb(9, 85, 74);
+  font-weight: 700;
 }
 
 .fa1-facebook :hover{
