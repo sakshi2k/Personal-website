@@ -161,19 +161,19 @@
     </div>
     <!-- End of achievments section -->
     <div style="text-align:right;">
-      <a href="/" class="btn btn-light btn-lg scrollToTop" role="button"><i class="fa fa-chevron-up"></i></a>
+      <a href="/" class="btn btn-lg scrollToTop" role="button"><i class="fa fa-chevron-up"></i></a>
     </div>
   
       <script>
-        // Navbar animation on scrolling
+        // Animation on scrolling.
         window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("navbar-example2");
+        var navbar = document.getElementById("navbar-header");
         var scrollToTop = document.querySelector(".scrollToTop");
 
         function myFunction() {
           if (window.pageYOffset >= 1) {
-            if ($(this).scrollTop() > 5) {
+            if ($(this).scrollTop() > 1) {
               navbar.classList.add("sticky");
               scrollToTop.classList.remove("fadeIn");
               scrollToTop.classList.add("fadeOut");
@@ -185,13 +185,13 @@
           }
         
           $('.scrollToTop').click(function(){
-            $("html, body").animate({scrollTop : 0},700);
+            $("html, body").animate({scrollTop : 0},1000);
             return false;
           }); 
         }      
       </script>
       
-      <script src="js/workings.js"></script>
+      <script src="js/theme.js"></script>
       <script src="js/progressBar.js"></script>
     </body>
   <%- include('partials/footer') -%>

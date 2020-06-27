@@ -1,7 +1,7 @@
-<header class="header_area navbar_fixed">
+<header class="header_area navbar_fixed" id="navbar-header">
   <nav class="navbar navbar-expand-sm navbar-light" id="navbar-example2">
       <button class="navbar-toggler" type="button" data-toggle="collapse" 
-              data-target="#navbarText, #navbarSocialText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -22,12 +22,14 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>    
-          <li class="nav-item" style="padding-top: 6px;">
-              <img src="imgs/mode.png" alt="DarkMode"
-              width="20px" height="20px" style="cursor: pointer;" onclick="retheme()"/>
-          </li>                
         </ul>  
       </div>
+      <ul class="navbar-nav ml-auto p-2" style="position: fixed; right: 20px; top: px;">
+        <li class="nav-item" style="margin-right: 30px;">
+            <img src="imgs/mode.png" alt="DarkMode"
+            width="20px" height="20px" style="cursor: pointer;" onclick="retheme()"/>
+        </li>                
+      </ul>
       
     </nav>
                     
