@@ -187,7 +187,7 @@ body {
 
 .fadeOut {
     opacity: 1;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(139, 139, 139);
     color: black;
 }
 
@@ -317,13 +317,13 @@ body {
 
     .darkModeLightProps{
         color: rgb(255, 255, 255);
+        /* background-color: #00000080; */
         font-weight: 500;
     }
 
     .darkModeScrollToTop{
-        color: rgb(255, 255, 255);
+        background-color: gray;
         border-color: rgba(255, 255, 255, 0.164);
         border: 2px;
-        /* border-style: ridge; */
         font-weight: 500;
     }

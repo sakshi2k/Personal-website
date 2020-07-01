@@ -1,6 +1,6 @@
 .navbar {
     margin-right: 130px;
-    padding-top: 20pt;
+    padding-top: 10pt;
 }
 
 .nav-item{
@@ -14,7 +14,8 @@
     margin-top: -20px;
     z-index: 2;
     padding-bottom: 5px;
-    background-color: white;
+    padding-top: 10pt;
+    background-color: #ffffff69;
     width: 100%;
   }
 
