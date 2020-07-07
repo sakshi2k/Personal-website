@@ -1,14 +1,14 @@
-/*  icon-bar2 - SIDEBAR */
+/*  icon-bar - SIDEBAR */
 
 .icon-bar {
-  margin-top: -280pt;
+  margin-top: -180pt;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 2%;
   text-align: right;
   /* padding-left: 1010px; */
-  margin-left: 80%;
+  margin-left: 300pt;
 }
 
 /* Style the icon bar links */

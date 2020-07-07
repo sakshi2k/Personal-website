@@ -291,13 +291,12 @@ body {
     }
 
     #meImg2 {
-        margin-left: 90pt;
-        margin-top: 5pt;
+        margin-left: 70pt;
+        /* margin-top: 5pt; */
     }
 
     .skill-section {
         margin-top: 20px;
-        /* border-style: ; */
     }
 }
 
