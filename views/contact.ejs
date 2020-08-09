@@ -2,20 +2,21 @@
 <link rel="stylesheet" href="css/contact.css">
 
 <%- include('partials/navbar') -%>
-<body style="background-image: url('../imgs/bg-img2.png');">
+<!-- <body style="background-image: url('../imgs/bg-img.png');"> -->
+<body class="view-area1">
     <img src="imgs/Tag.png" id="tag">
-    <div class="container form-group">
-        <h1 class="page-title">Contact Me</h1>
-        <img src="imgs/contact.PNG" alt="contactMe" id="contactIcon">
-        
-        <!-- <form action="mailto:csakshi3006@gmail.com" method="POST" class="inputForm"> -->
-        <form method="POST" class="inputForm" action="/send">
-            <input type="text" class="form-control" placeholder="Name" required>
-            <input type="text" class="form-control" placeholder="Email" required>
-            <input type="text" class="form-control" placeholder="Subject" required>
-            <textarea class="form-control" placeholder="Message" rows="3" required></textarea>
-            <button type="submit" class="btn btn-secondary btn-submit">Send<i class="fa fa-paper-plane-o"></i></button>
-        </form>
-    </div>
-    <%- include('partials/footer') -%>
+        <div class="container">
+            <h1 class="page-title">Contact Me</h1>
+            <img src="imgs/contact.PNG" alt="contactMe" id="contactIcon">
+            <form method="POST" class="inputForm" action="/send">
+                <input type="text" class="form-control" placeholder="Name" required>
+                <input type="text" class="form-control" placeholder="Email" required>
+                <input type="text" class="form-control" placeholder="Subject" required>
+                <textarea class="form-control" placeholder="Message" rows="3" required></textarea>
+                <button type="submit" class="btn btn-secondary btn-submit">Send<i class="fa fa-paper-plane-o"></i></button>
+            </form>
+        </div>
 </body>
+<script>
+    $("#darkModeBtn").css("display","none");
+</script>

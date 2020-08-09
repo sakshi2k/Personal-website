@@ -3,7 +3,6 @@ body {
 }
 
 .view-area1, .view-area2{
-    /* background-image: url('../imgs/bg-img.png'); */
     background-image: url('../imgs/rightBG.png');
     background-size: cover;
     background-position: center center;
@@ -12,12 +11,21 @@ body {
     margin-bottom: 60pt;
 } 
 
-#meImg1, #meImg2{
+.view-area3 {
+    background-image: url('../imgs/rightBG2.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px; 
+}
+
+#meImg1{
     margin-top: 13%;
     margin-left: 10%;
 }
-
-#meImg2 {
+#meImg2{
+    margin-top: 10%;
+    margin-left: 10%;
     margin-left: 25pt;
     padding-top: 10pt;
 }
@@ -205,6 +213,10 @@ body {
         display: none;
     }
 
+    .icon-bar3 { 
+        display: inline;
+    }
+
     .imgDiv {
         padding: 0px;
     }
@@ -281,12 +293,12 @@ body {
     
     .btn-secondary {
         text-align: center;
-        margin-left: 40%;
+        margin-left: 43%;
         margin-bottom: 10px;
     }
 
     #meImg1 {
-        margin-left: 112pt;
+        margin-left: 125pt;
         margin-top: 20pt;
     }
 
@@ -308,7 +320,6 @@ body {
 
     .darkModeLightProps{
         color: rgb(255, 255, 255);
-        /* background-color: #00000080; */
         font-weight: 500;
     }
 

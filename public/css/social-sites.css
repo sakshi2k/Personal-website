@@ -63,14 +63,20 @@
 }
 
 /*  icon-bar2 - FOOTER */
+/*  icon-bar3 - ON MOBILE SCREEN */
 
-.icon-bar2 a{ 
+.icon-bar3{
+  display: none;
+  text-align: center;
+}
+
+.icon-bar2 a, .icon-bar3 a{ 
   color: black;
   font-size: 22px;
   margin : 0px 8px;
 }
 
-.icon-bar2 a :hover { 
+.icon-bar2 a :hover, .icon-bar3 a :hover  { 
   padding : 10px;
 }
 
