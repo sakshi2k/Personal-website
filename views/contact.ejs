@@ -16,11 +16,17 @@
                 <button type="submit" class="btn btn-secondary btn-submit">Send<i class="fa fa-paper-plane-o"></i></button>
             </form>
         </div>
-        <div style="margin-left: 50%;">
+        <div style="margin-left: 54%;">
             <%- include('partials/social-icons'); -%>
         </div>
-        <%- include('partials/footer') -%>
+        <div style="margin-top: -65pt;">
+            <%- include('partials/footer') -%>
+        </div>
 </body>
 <script>
     $("#darkModeBtn").css("display","none");
+    if($("#successMsg").text() === "Congratulations. Your message has been successfully sent. Thanks for reaching out.!") {
+        $("#successMsg").css("color","green");
+    }
+        
 </script>

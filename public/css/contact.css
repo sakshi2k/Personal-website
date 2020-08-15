@@ -3,7 +3,9 @@
 }
 
 #successMsg {
-    color: green;
+    color: red;
+    margin-left: 50pt;
+    font-size: larger;
 }
 
 .form-control  {

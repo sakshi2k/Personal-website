@@ -10,7 +10,7 @@ function retheme() {
       navLinks[i].classList.toggle("darkModeLightProps");
       if(getComputedStyle(navLinks[i]).color === "rgba(0, 0, 0, 0.5)") {
         navLinks[i].style.color = "white";
-        navbarIconToggler.style.backgroundColor = "rgb(255, 255, 255,0.6)";
+        navbarIconToggler.style.backgroundColor = "rgb(13, 140, 160)";
       }
       else {
         navLinks[i].style.color = "rgba(0, 0, 0, 0.5)";

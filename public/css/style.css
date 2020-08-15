@@ -25,8 +25,7 @@ body {
 }
 #meImg2{
     margin-top: 10%;
-    margin-left: 10%;
-    margin-left: 25pt;
+    margin-left: 20pt;
     padding-top: 10pt;
 }
 
@@ -81,7 +80,7 @@ body {
     font-style: normal;
     font-weight: 600;
     margin-top: -24px;
-    /* margin-left: -8px; */
+    margin-left: 20pt;
     color: #6D6D6D;
 }
 
@@ -90,9 +89,9 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: #0D8CA0;
+    padding-left: 20pt;
     font-style: normal;
     margin : -5px 0px;
-    margin-left: -2px;
 }
 
 #name-div-inner {
@@ -114,13 +113,12 @@ body {
     font-weight: 300;
     color: #707070;
     margin-top: 24pt;
-    margin-left: 120pt;
+    margin-left: 140pt;
 }
 
 .btn-secondary{
     margin-top: 8px;
-    margin-left: 160px;
-    /* background-color: #0DA08A; */
+    margin-left: 185px;
     background-color: #0D8CA0;
     border: none;
 }
@@ -217,11 +215,9 @@ body {
 
     .imgDiv {
         margin-left: 2%;
-
     }
 
     #meImg1, #meImg2 {
-        /* margin-left: 35%; */
         margin-top: 3pt;
     }
     
@@ -251,7 +247,7 @@ body {
     }
 
     #meImg1 {
-        margin-left: 29pt;
+        /* margin-left: 20pt; */
         margin-top: 14pt;
         margin-bottom: -12pc;
     }
@@ -267,7 +263,7 @@ body {
 
     .progress{
         margin: 10px;
-        width: 95%;
+        width: 90%;
         height: 22px;
         background-color: rgb(218, 214, 214);
     }
@@ -297,7 +293,7 @@ body {
     }
 
     #meImg1 {
-        margin-left: 125pt;
+        margin-left: 115pt;
         margin-top: 20pt;
     }
 
@@ -310,6 +306,7 @@ body {
         margin-top: 20px;
     }
 }
+
 
 /* Dark mode theme */
     .dark-mode {
