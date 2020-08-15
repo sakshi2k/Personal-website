@@ -19,7 +19,7 @@ function retheme() {
     }
 
     for (var i=11; i < faIcons.length; i++) {
-      if(faIcons[i].style.color !== "rgb(255, 255, 255)"){
+      if(faIcons[i].style.color !== "white"){
         faIcons[i].style.color = "white";
       }
       else

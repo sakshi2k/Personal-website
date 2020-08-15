@@ -20,8 +20,9 @@ body {
 }
 
 #meImg1{
+    background-color: lawngreen;
     margin-top: 13%;
-    margin-left: 10%;
+    margin-left: 20px;
 }
 #meImg2{
     margin-top: 10%;
@@ -141,18 +142,16 @@ body {
     margin: 10px;
     width: 105%;
     height: 22px;
-    background-color: rgb(218, 214, 214);
 }
 
 .progress-bar{
     margin: 4px;
     margin-left: 6px;
-    border-radius: 2%;    
-    /* background-color : #0EA698; */
-    background-color: #0D8CA0;
+    border-radius: 3%;
+    background-color: #0d8699;
 }
 
-.achImg {
+.achImg {                            /* achievements' section imgs */
     border-radius: 2%;
 }
 
@@ -218,7 +217,8 @@ body {
     }
 
     .imgDiv {
-        padding: 0px;
+        margin-left: 2%;
+
     }
 
     #meImg1, #meImg2 {

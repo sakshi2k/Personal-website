@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/public"));
 require('dotenv').config();
 
 app.get("/", async(req, res) => {
-  res.render("index");
+  res.render("home");
 })
 
 app.get("/projects", async(req, res) => {
@@ -40,7 +40,6 @@ app.post("/send", (req, res) => {
   var firstName = fullName.split(' ').slice(0, -1).join(' ');
   var lastName = fullName.split(' ').slice(-1).join(' ');
 
-  // console.log(firstName, lastName, email);
   const messageData = {
   members : [
       {

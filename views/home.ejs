@@ -49,7 +49,7 @@
                   <a href="/resume" class="btn btn-secondary">Resume</a>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 imgDiv">
-                <span>
+                <span id="spanImg2">
                   <img src="imgs/girl-stool.svg" alt="me" id="meImg2">
                 </span>
                 <%- include('partials/social-icons'); -%>
@@ -85,7 +85,7 @@
         <div class="row">
           <div class="aboutMeImg col-xl-5 col-lg-5 col-md-12">
             <img src="imgs/aboutMe.jpg" id="aboutMeImg">
-            <p id="description">I am currently pursuing engineering and I am a FullStack Web Developer, specialised in HTML/CSS/JS and MERN technology, a Freelancer and a Machine Learning Enthusiast. I have my interests in programming and I have working knowledge of Data structures & Algorithms and OOPs concepts. I am quick and a patient learner and I try to give my best in whatever I do. </p>       
+            <p id="description">I am currently pursuing engineering and I am a FullStack Web Developer, specialised in HTML/CSS/JS and MERN technology, a Freelancer and a Machine Learning Enthusiast. I have my interests in programming and I have working knowledge of Data structures & Algorithms and OOPs concepts. I am a quick and a patient learner and I try to give my best in whatever I do. </p>
           </div>
       
           <div class="col-xl-1 col-lg-1 col-md-0"></div>
@@ -121,7 +121,6 @@
           </div>
         </div>
       </div>
-                        <!-- TOP BUTTON TO navigate to the top -->
     <!-- End of skills section -->
 
     <!-- Achievments section -->
@@ -133,12 +132,11 @@
 
           <div class="col-lg-4 col-sm-4 col-xs-4">
             <div class="card-item">
-                <!-- <img class="card-img-top achImg" src="imgs/achievments/WomenTech.png" -->
                 <img class="card-img-top achImg" src="https://www.womentech.net/sites/default/files/logo/Women%20Tech%20Network%20Logo%20FB%20Post%202.png"
                     alt="WomenTech">
             </div>
               <a href="https://www.womentech.net/" 
-                id="achLinks"><h5 class="card-title">Global Ambassador at WomenTech Network</h5></a>
+                target="_blank" id="achLinks"><h5 class="card-title">Global Ambassador at WomenTech Network</h5></a>
           </div>
 
           <div class="col-lg-4 col-sm-4 col-xs-4">
@@ -147,7 +145,7 @@
                   alt="Microsoft" style="margin: 26pt 0px;">
             </div>
               <a href="https://drive.google.com/file/d/1PaJWArdvpLWsEHC9mfYtv-NnK-rLbzqD/view?usp=sharing" 
-                id="achLinks"><h5 class="card-title">Certified by Microsoft Student Partners at The Quarantine Hackfest.</h5></a>
+                target="_blank" id="achLinks"><h5 class="card-title">Certified by Microsoft Student Partners at The Quarantine Hackfest.</h5></a>
           </div>
 
           <div class="col-lg-4 col-sm-4 col-xs-4">
@@ -156,7 +154,7 @@
                     alt="Konnexions" style="margin: 16pt 0px;"></a>
             </div>
               <a href="https://drive.google.com/file/d/1Rhz7rSl62movC8vgDppxw-ZRXf009wbB/view?usp=sharing"
-                id="achLinks"><h5 class="card-title">Certified for Machine Learning course from Konnexions (KIIT).</h5></a>
+                target="_blank" id="achLinks"><h5 class="card-title">Certified for Machine Learning course from Konnexions (KIIT).</h5></a>
           </div>
 
           <div class="col-lg-4 col-sm-4 col-xs-4">
@@ -172,38 +170,39 @@
       </div>
     </div>
     <!-- End of achievments section -->
+
+    <!-- TOP BUTTON TO navigate to the top -->
     <div style="text-align:right;">
-      <a href="/" class="btn btn-light scrollToTop" role="button"><i class="fa fa-chevron-up" style="color: white;"></i></a>
+      <button class="btn btn-light scrollToTop"><i class="fa fa-chevron-up" style="color: white;"></i></button>
     </div>
   
   <%- include('partials/footer') -%>
   
-      <script>
-        // Animation on scrolling.
-        window.onscroll = function() {myFunction()};
+<script>
+  // Animation on scrolling.
+  window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("navbar-header");
-        var scrollToTop = document.querySelector(".scrollToTop");
+  var navbar = document.getElementById("navbar-header");
+  var scrollToTop = document.querySelector(".scrollToTop");
 
-        function myFunction() {
-          if (window.pageYOffset > 1) {
-            if ($(this).scrollTop() > 1) {
-              navbar.classList.add("sticky");
-              scrollToTop.classList.remove("fadeIn");
-              scrollToTop.classList.add("fadeOut");
-            }
-          } else {
-              navbar.classList.remove("sticky");
-              scrollToTop.classList.remove("fadeOut");
-              scrollToTop.classList.add("fadeIn");
-          }
-        
-          $('.scrollToTop').click(function(){
-            $("html, body").animate({scrollTop : 0},1000);
-            return false;
-          }); 
-        }     
-        
-      </script>
-    </body>
+  function myFunction() {
+    if (window.pageYOffset > 1) {
+      if ($(this).scrollTop() > 1) {
+        navbar.classList.add("sticky");
+        scrollToTop.classList.remove("fadeIn");
+        scrollToTop.classList.add("fadeOut");
+      }
+    } else {
+        navbar.classList.remove("sticky");
+        scrollToTop.classList.remove("fadeOut");
+        scrollToTop.classList.add("fadeIn");
+    }
+  
+    $('.scrollToTop').click(function(){
+      $("html, body").animate({ scrollTop: (0)}, 1000, 'easeInOutQuad')	
+    }); 
+  }     
+
+</script>
+</body>
 </html>
