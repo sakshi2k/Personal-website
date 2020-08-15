@@ -2,6 +2,10 @@
     padding-left: 20pt;
 }
 
+#successMsg {
+    color: green;
+}
+
 .form-control  {
     width: 60%;
     margin-bottom: 10pt;

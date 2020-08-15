@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const request = require("request");
+const https = require("https");
 
 const app = express();
 
@@ -8,6 +10,8 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({  extended: true }));
 app.use(express.static(__dirname + "/public"));
+
+require('dotenv').config();
 
 app.get("/", async(req, res) => {
   res.render("index");
@@ -22,20 +26,22 @@ app.get("/resume", async(req, res) => {
 })
 
 app.get("/contact", async(req, res) => {
-  res.render("contact");
+  res.render("contact", {successMessage : ""});
 })
 
 app.post("/send", (req, res) => {
 
-  console.log(req.body);
-  const firstName = req.body.fname;
-  const lastName = req.body.lname;
-  const phNum = req.body.phNum;
+  const fullName = req.body.name;
   const email = req.body.email;
-  const msg = req.body.msg;
+  const subject = req.body.subject;
+  const message = req.body.message;
+
+  //processing Fullname
+  var firstName = fullName.split(' ').slice(0, -1).join(' ');
+  var lastName = fullName.split(' ').slice(-1).join(' ');
 
   // console.log(firstName, lastName, email);
-  const data = {
+  const messageData = {
   members : [
       {
       email_address: email,
@@ -43,14 +49,14 @@ app.post("/send", (req, res) => {
       merge_fields : {
           FNAME : firstName,
           LNAME : lastName,
-          PHONE : phNum,
-          MESSAGE : msg
-      }
+          MESSAGE : message,
+          SUBJECT : subject
+        }
       }
   ]   
   };
 
-  const jsonData = JSON.stringify(data);
+  const jsonData = JSON.stringify(messageData);
 
   const url = "https://us8.api.mailchimp.com/3.0/lists/"+process.env.MC_ListID;
   const options = {
@@ -63,11 +69,13 @@ app.post("/send", (req, res) => {
           console.log(JSON.parse(data));
       })
 
-
       if(response.statusCode ===200){
-          res.redirect("/contact");
+        res.render("contact", {successMessage : "Congratulations. Your message has been successfully sent. Thanks for reaching out.!"});
       }
-      else res.send("/failure.html");
+      else {
+        res.render("contact", {successMessage : "Sorry, some issue occurred. Try again?"});
+        console.log("Failed");        
+      }
   })
 
   request.write(jsonData);
@@ -76,5 +84,5 @@ app.post("/send", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log("Server started on port");
+  process.env.PORT ? console.log("Server started on port") : console.log("Server started on port 3000");
 });

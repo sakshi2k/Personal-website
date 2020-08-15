@@ -2,19 +2,22 @@
 <link rel="stylesheet" href="css/contact.css">
 
 <%- include('partials/navbar') -%>
-<!-- <body style="background-image: url('../imgs/bg-img.png');"> -->
 <body class="view-area1">
     <img src="imgs/Tag.png" id="tag">
         <div class="container">
             <h1 class="page-title">Contact Me</h1>
             <img src="imgs/contact.PNG" alt="contactMe" id="contactIcon">
+            <p id="successMsg"><%= successMessage %></p>
             <form method="POST" class="inputForm" action="/send">
-                <input type="text" class="form-control" placeholder="Name" required>
-                <input type="text" class="form-control" placeholder="Email" required>
-                <input type="text" class="form-control" placeholder="Subject" required>
-                <textarea class="form-control" placeholder="Message" rows="3" required></textarea>
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <input type="text" name="email" class="form-control" placeholder="Email" required>
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                <textarea class="form-control" name="message" placeholder="Message" rows="3" required></textarea>
                 <button type="submit" class="btn btn-secondary btn-submit">Send<i class="fa fa-paper-plane-o"></i></button>
             </form>
+        </div>
+        <div style="margin-left: 50%;">
+            <%- include('partials/social-icons'); -%>
         </div>
 </body>
 <script>
