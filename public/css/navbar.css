@@ -22,18 +22,27 @@
 
 
   /* Omlet toggle */
-
- 
-   
-   #animationWindow {
+  #animationWindow {
     width: 5%;
     height: 5%;
-    -webkit-tap-highlight-color:transparent;
     cursor:pointer;
-   } 
+  } 
+  
+  @media only screen and (max-width: 700px) {   
+   #animationWindow {
+     width: 10%;
+     height: 10%;
+     position: fixed;
+     right: 2%;
+     cursor:pointer;
+    } 
+  }
+
+
+
 
   /* Plain toggle Switch */
-   .switch {
+   /* .switch {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -75,12 +84,12 @@ input:checked + .slider:before {
     -ms-transform: translateX(16px);
     transform: translateX(16px);
   } 
-  
+   */
   /* Rounded sliders */
-   .slider.round {
+   /* .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  } 
+  }  */
