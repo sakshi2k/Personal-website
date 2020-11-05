@@ -3,6 +3,20 @@
     text-align: center;
 }
 
+.project {
+    transition: transform .3s;
+    margin: 0px 22pt ;
+}
+
+.project:hover{
+    transform: scale(1.35);
+    border: 0.6px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    z-index: 4;
+}
+
 #to-github{
     font-size: 25pt;
     padding-left: 20px;
@@ -11,4 +25,9 @@
 
 #to-app {
     margin-top: -10px;
+}
+
+.col-lg-4 {
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
 }

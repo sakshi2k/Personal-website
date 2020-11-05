@@ -1,34 +1,44 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"
+  integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1jvYdJQRD8jOoIVl+WTyVeMawUWVCh1O8+Q=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"></script>
+
 <header class="header_area navbar_fixed" id="navbar-header">
   <nav class="navbar navbar-expand-sm navbar-light" id="navbar-example2">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" 
-              data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav nav-pills ml-auto p-2">
-          <li class="nav-item">
-            <a class="nav-link" id="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-link" href="/#aboutStart" >About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-link" href="/projects" >Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-link" href="/resume" >Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav-link" href="/contact" >Contact</a>
-          </li>    
-        </ul>  
-      </div>
-      <ul class="navbar-nav ml-auto p-2" style="position: fixed; right: 20px; top: px;">
-        <li class="nav-item" style="margin-right: 30px;" id="darkModeBtn">
-            <img src="imgs/mode.png" alt="DarkMode"
-            width="20px" height="20px" style="cursor: pointer;" onclick="retheme()"/>
-        </li>                
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav nav-pills ml-auto p-2">
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/#aboutStart">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/projects">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/contact">Contact</a>
+        </li>
       </ul>
-    </nav>
+    </div>
+
+    <!-- Omlet toggle -->
+    <div id="animationWindow"></div>
+
+    <!-- Plain toggle -->
+    <!-- <label class="switch">
+      <input type="checkbox" id="darkModeBtn" onclick="retheme()">
+      <span class="slider round"></span>
+    </label> -->
+  </nav>
 </header>
