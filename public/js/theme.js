@@ -27,6 +27,7 @@ function retheme() {
   }
 }
 
+retheme();
 
 // Omlet toggle
 if (location.pathname === '/') {
