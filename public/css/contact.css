@@ -25,3 +25,12 @@
 .btn-submit {
   margin-left: -1pt;
 }
+.contact-footer {
+  margin-top: -65pt;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-footer {
+    margin-top: 0pt;
+  }
+}

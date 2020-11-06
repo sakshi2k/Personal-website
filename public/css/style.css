@@ -156,6 +156,15 @@ body {
     padding: 15px;
 }
 
+/* When col-lg-4 */
+/* .card-img {
+    margin: 26pt 0px;
+}
+
+.card-imgg {
+    margin: 16pt 0px;
+} */
+
 .card-title {
     font-size: 18px;
 }
@@ -230,6 +239,19 @@ body {
         margin: 0px;
     }
 
+    .card-item {
+        width: 60%;
+        text-align: center;
+        justify-items: center;
+    }
+    .card-img-top {
+        margin-left: 35%;
+    }
+    .card-title {
+        font-size: smaller;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -293,13 +315,12 @@ body {
     }
 
     #meImg1 {
-        margin-left: 115pt;
-        margin-top: 20pt;
+        margin-left: 120pt;
+        /* margin-top: 20pt; */
     }
 
     #meImg2 {
-        margin-left: 70pt;
-        /* margin-top: 5pt; */
+        margin-left: 90pt;
     }
 
     .skill-section {
