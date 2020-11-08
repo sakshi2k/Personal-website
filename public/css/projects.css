@@ -1,4 +1,6 @@
 .card-title {
+    font-size: x-large;
+    color: rgb(20, 91, 94);
     padding-top: 10px;
     text-align: center;
 }
@@ -9,9 +11,9 @@
 
 .project:hover{
     transform: scale(1.35);
-    border: 0.6px solid gray;
-    border-radius: 10px;
     background-color: white;
+    border-radius: 2%;
+    box-shadow:0 100px 80px rgba(0, 0, 0, 0.62);
     padding: 10px;
     z-index: 4;
 }
@@ -26,8 +28,14 @@
     margin-top: -10px;
 }
 
-@media only screen and (max-width: 700px) {   
-    .project {
-        margin-bottom: 10px;
+@media only screen and (max-width: 992px) {   
+    .card-img-top {
+        width: 70%;
+        margin-left: 18%;
+        margin-top: 40pt;
+    }
+
+    .project:hover{
+        transform: scale(1.05);
     }
 }

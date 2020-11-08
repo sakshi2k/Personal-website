@@ -64,8 +64,10 @@
 /*  icon-bar2 - FOOTER */
 /*  icon-bar3 - ON MOBILE SCREEN */
 
+/* display only on mobie screen */
 .icon-bar3{
-  display: none;
+  display: none;            
+  padding-bottom: 42pt;
   text-align: center;
 }
 

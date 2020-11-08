@@ -2,11 +2,13 @@ function retheme() {
   var element = document.body;
   var faIcons = document.getElementsByClassName("fa");
   var navLinks = document.getElementsByClassName("nav-link");
+  var cardTitles = document.getElementsByClassName("card-title");
   var navbarIconToggler = document.getElementsByClassName("navbar-toggler")[0];
 
   element.classList.toggle("dark-mode");
 
-  for (var i = 0; i < navLinks.length; i++) {
+  // Chaning navbar links coloring theme
+  for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].classList.toggle("darkModeLightProps");
     if (getComputedStyle(navLinks[i]).color === "rgba(0, 0, 0, 0.5)") {
       navLinks[i].style.color = "white";
@@ -18,7 +20,18 @@ function retheme() {
     }
   }
 
-  for (var i = 12; i < faIcons.length; i++) {
+  // Chaning cardTitles (of achievments) coloring theme
+  for (let i = 0; i < cardTitles.length; i++) {
+    navLinks[i].classList.toggle("darkModeLightProps");
+    if (getComputedStyle(navLinks[i]).color === "rgba(0, 0, 0, 0.5)") {
+      cardTitles[i].style.color = "grey";
+    }
+    else {
+      cardTitles[i].style.color = "rgb(20, 91, 94)";
+    }
+  }
+
+  for (let i = 12; i < faIcons.length; i++) {
     if (faIcons[i].style.color !== "white") {
       faIcons[i].style.color = "white";
     }
@@ -27,7 +40,7 @@ function retheme() {
   }
 }
 
-retheme();
+
 
 // Omlet toggle
 if (location.pathname === '/') {
