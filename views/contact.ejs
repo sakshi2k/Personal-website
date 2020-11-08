@@ -10,6 +10,7 @@
     <img src="imgs/contact.PNG" alt="contactMe" id="contactIcon" />
     <p id="successMsg"><%= successMessage %></p>
     <form method="POST" class="inputForm" action="/send">
+      <!-- <form class="inputForm"> -->
       <div class="input-group">
         <input type="text" name="fname" class="form-control form-sm" placeholder="First Name" required />
         <input type="text" name="lname" class="form-control form-sm" placeholder="Last Name" required />
@@ -18,6 +19,7 @@
       <input type="text" name="subject" class="form-control" placeholder="Subject" required />
       <textarea class="form-control" name="message" placeholder="Message" rows="3" required></textarea>
       <button type="submit" class="btn btn-secondary btn-submit">
+        <!-- onclick="sendRequest()" -->
         Send<i class="fa fa-paper-plane-o"></i>
       </button>
     </form>
@@ -26,11 +28,27 @@
   <div class="contact-footer"><%- include('partials/footer') -%></div>
 </body>
 <script>
-  $("#darkModeBtn").css("display", "none");
-  if (
-    $("#successMsg").text() ===
-    "Congratulations. Your message has been successfully sent. Thanks for reaching out.!"
-  ) {
-    $("#successMsg").css("color", "green");
+
+  function sendRequest() {
+    $.ajax('/contact/send', {
+      type: 'POST',  // http method
+      success: function (result) {
+        console.log('success');
+        console.log(result);
+        $("#successMsg").text(result.successMessage);
+        resul$("#successMsg").css("color", "green");
+      },
+      error: function (err) {
+        console.log('failed');
+        console.log(err);
+        $("#successMsg").text(result.successMessage);
+      }
+    });
   }
+  // setTimeout(() => {
+  //   if (
+  //     $("#successMsg").text() === "Congratulations. Your message has been successfully sent. Thanks for reaching out.!") {
+  //     $("#successMsg").css("color", "green");
+  //   }
+  // }, 2000)
 </script>

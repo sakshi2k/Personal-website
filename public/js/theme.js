@@ -9,7 +9,6 @@ function retheme() {
 
   // Chaning navbar links coloring theme
   for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].classList.toggle("darkModeLightProps");
     if (getComputedStyle(navLinks[i]).color === "rgba(0, 0, 0, 0.5)") {
       navLinks[i].style.color = "white";
       navbarIconToggler.style.backgroundColor = "rgb(13, 140, 160)";
@@ -22,12 +21,12 @@ function retheme() {
 
   // Chaning cardTitles (of achievments) coloring theme
   for (let i = 0; i < cardTitles.length; i++) {
-    navLinks[i].classList.toggle("darkModeLightProps");
-    if (getComputedStyle(navLinks[i]).color === "rgba(0, 0, 0, 0.5)") {
+    if (getComputedStyle(navLinks[i]).color !== "rgba(0, 0, 0, 0.5)") {   //  !==  since changed now in the above loop.
       cardTitles[i].style.color = "grey";
     }
     else {
-      cardTitles[i].style.color = "rgb(20, 91, 94)";
+      // cardTitles[i].style.color = "rgb(20, 91, 94)";
+      cardTitles[i].style.color = "rgb(13, 140, 160)";
     }
   }
 

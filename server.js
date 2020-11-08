@@ -29,7 +29,7 @@ app.get("/contact", async (req, res) => {
   res.render("contact", { successMessage: "" });
 });
 
-app.post("/send", (req, res) => {
+app.post("/contact/send", (req, res) => {
   const firstName = req.body.fname;
   const lastName = req.body.lname;
   const email = req.body.email;
@@ -68,16 +68,23 @@ app.post("/send", (req, res) => {
     if (response.statusCode === 200) {
       res.render("contact", {
         successMessage:
-          "Congratulations. Your message has been successfully sent. Thanks for reaching out.!",
+          "Congratulations. Your message has been successfully sent. Thanks for reaching out.!"
       });
+      // res.send({
+      //   successMessage: "Congratulations. Your message has been successfully sent. Thanks for reaching out.!"
+      // });
     } else {
+      // res.send({
+      //   successMessage: "Sorry, some issue occurred. Try again?"
+      // });
       res.render("contact", {
-        successMessage: "Sorry, some issue occurred. Try again?",
+        successMessage: "Sorry, some issue occurred. Try again?"
       });
       console.log("Failed");
     }
   });
 
+  // Consoles request.
   request.write(jsonData);
   request.end();
 });
