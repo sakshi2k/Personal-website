@@ -1,8 +1,12 @@
 .card-title {
-    font-size: x-large;
+    font-size: 20pt;
     color: rgb(20, 91, 94);
     padding-top: 10px;
     text-align: center;
+}
+
+.card-text{
+    font-size: 12pt;
 }
 
 .project {
@@ -10,12 +14,12 @@
 }
 
 .project:hover{
-    transform: scale(1.35);
+    transform: scale(1.2);
     background-color: white;
     border-radius: 2%;
     box-shadow:0 100px 80px rgba(0, 0, 0, 0.62);
     padding: 10px;
-    z-index: 4;
+    z-index: 20;
 }
 
 #to-github{

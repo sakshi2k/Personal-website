@@ -3,7 +3,7 @@
 <body>
 
   <!-- Main Viewport -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride>
     <div class="carousel-inner">
       <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -20,11 +20,10 @@
                   <h6 id="name-text">CHOUDHARY</h6>
                 </div>
               </div>
-              <p id="about-text">I am a Full Stack Web Developer,
-                UI/UX Developer, Freelancer
-                & a Machine Learning Enthusiast.
+              <p id="about-text">
+                <span id="demo"></span>
               </p>
-              <a href="/resume" class="btn btn-secondary resumeBtn">Resume</a>
+              <a href="/resume" class="btn btn-secondary resumeBtn btn-sm">Resume</a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 imgDiv">
               <img src="imgs/me.jpeg" alt="me" width="200px" height="350px" id="meImg1" style="border-radius: 8%;">
@@ -192,7 +191,31 @@
 
       <%- include('partials/footer') -%>
 
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       <script>
+        var demo = document.getElementById('demo');
+
+        var typewriter = new Typewriter(demo, {
+          loop: true
+        });
+
+        typewriter
+          .pauseFor(250)
+          .typeString('I am a ')
+          .typeString('Full Stack Web Developer')
+          .pauseFor(800)
+          .deleteChars(23)
+          // .typeString('UI/UX Developer')
+          // .typeString('Graphics Designer')
+          // .pauseFor(1000)
+          // .deleteChars(15/17)
+          .typeString('reelancer')
+          .pauseFor(1000)
+          .deleteChars(10)
+          .typeString('Machine Learning Enthusiast')
+          .pauseFor(1000)
+          .start();
+
         retheme();
         // Animation on scrolling.
         window.onscroll = function () { myFunction() };
@@ -219,7 +242,7 @@
         }
 
       </script>
-
+      <!-- <script src="js/home.js"></script> -->
 </body>
 
 </html>
