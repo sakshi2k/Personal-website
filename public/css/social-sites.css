@@ -106,3 +106,10 @@
   background: #bb0000;
   color: white;
 }
+
+
+@media (max-width: 575.98px) { 
+  .icon-bar3{
+    margin-left: -10pt;
+  }
+}
