@@ -1,0 +1,254 @@
+<%- include('partials/header') -%>
+
+<body>
+  <!-- Main Viewport -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride>
+    <div class="carousel-inner">
+      <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <div class="carousel-item active">
+        <div class="view-area1">
+          <%- include('partials/navbar') -%>
+          <div class="row">
+            <div class="col-lg-6 mainText">
+              <div id="name-div">
+                <h6 id="hi-msg">HEY, It's </h6>
+                <div id="name-div-inner">
+                  <h6 id="name-text">SAKSHI</h6>
+                  <h6 id="name-text">CHOUDHARY</h6>
+                </div>
+              </div>
+              <p id="about-text">
+                <span id="demo"></span>
+              </p>
+              <a href="/resume" class="btn btn-secondary resumeBtn">Resume</a>
+            </div>
+            <div class="col-lg-4 imgDiv">
+              <img src="imgs/me-new.png" alt="sakshichoudhary" width="260px" height="420px" id="meImg1">
+              <%- include('partials/social-icons'); -%>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="view-area1">
+          <%- include('partials/navbar') -%>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mainText">
+              <div id="name-div">
+                <h6 id="hi-msg">HEY, It's </h6>
+                <h6 id="name-text">SAKSHI</h6>
+                <h6 id="name-text">CHOUDHARY</h6>
+              </div>
+              <p id="about-text">I am a Full Stack Web Developer,
+                UI/UX Developer, Freelancer
+                & a Machine Learning Enthusiast.
+              </p>
+              <a href="/resume" class="btn btn-secondary btn-resume">Resume</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 imgDiv">
+              <img src="imgs/girl-stool.svg" alt="me" id="meImg2">
+              <%- include('partials/social-icons'); -%>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 icon-bar3">
+      <ul>
+        <a href="https://wa.me/9999820678?text=Hey, Sakshi!" class="fa2-whatsapp" target="_blank"><i
+            class="fa fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/sakshi-choudhary-27665117a/" class="fa2-linkedin" target="_blank"><i
+            class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Sakshi2k/" class="fa2-github" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="mailto:csakshi3006@gmail.com" class="fa2-msg" target="_blank"><i class="fa fa-paper-plane-o"></i></a>
+        <a href="https://www.behance.net/sakshichoudhary2" class="fa2-behance" target="_blank"><i
+            class="fa fa-behance"></i></a>
+      </ul>
+    </div>
+
+    <!-- End of main -->
+
+    <!-- Skills section -->
+    <div class="container" style="margin-top: -20pt;">
+      <h1 id="aboutStart" style="text-align: center;">.....</h1>
+      <h1 id="aboutHeading" style="text-align: center;">Why You Hire Me!</h1><br />
+
+      <div class="row">
+        <div class="aboutMeImg col-xl-5 col-lg-5 col-md-12">
+          <img src="imgs/aboutMe.jpg" id="aboutMeImg">
+          <p id="description">I am currently pursuing engineering and I am a FullStack Web Developer, specialised in
+            MERN technology. I have working knowledge of Data structures & Algorithms and OOPs concepts.
+            I enjoy Programming as it requires problem solving and critical thinking. I am a quick and
+            a patient learner and I try to give my best in whatever I do. </p>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-0"></div>
+
+        <div class="bars col-xl-5 col-lg-5 col-md-12">
+          <div class="progress_br">
+            <!-- Progress Bars -->
+            HTML / CSS / Bootstrap
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 74%" aria-valuenow="20%" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            JavaScript
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            NodeJS
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            MongoDB / MySQL
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            GITHUB
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            ReactJS
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <!-- End of skills section -->
+
+      <!-- Achievments section -->
+      <div class="container">
+        <h1 style="text-align: center;">.....</h1>
+        <h3 id="achievmentsHeading" style="text-align: center;">Achievments & Certificates</h3>
+        <p class="text-right">
+          <a href="https://drive.google.com/drive/u/1/folders/1DuhDJeHS1w9X6hy8SIdBIpEgky6uAHqL" id="achLinks" class="btn btn-secondary">
+            Other Certificates
+          </a>
+        </p>
+        <div class="achievmentsSection">
+          <div class="row" style="margin-top: 20pt;">
+            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2">
+              <div class="card-item">
+                <img class="card-img-top achievmentImg" src="imgs/achievments/womenTech.png" alt="WomenTechNetwork">
+              </div>
+              <a href="https://www.womentech.net/global-ambassadors/India/Sakshi/Choudhary" target="_blank" id="achLinks">
+                <h5 class="card-title">Global Ambassador at WomenTech Network</h5>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2">
+              <div class="card-item">
+                <img class="card-img-top card-img achievmentImg" src="imgs/achievments/microsoftStudentPartners.png"
+                  alt="Microsoft">
+              </div>
+              <a href="https://drive.google.com/file/d/1PaJWArdvpLWsEHC9mfYtv-NnK-rLbzqD/view?usp=sharing"
+                target="_blank" id="achLinks">
+                <h5 class="card-title">Certified by Microsoft Student Partners at The Quarantine Hackfest.</h5>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-2">
+              <div class="card-item">
+                <img class="card-img-top card-img achievmentImg" src="imgs/achievments/konnexions.png" alt="Konnexions"></a>
+              </div>
+              <a href="https://drive.google.com/file/d/1Rhz7rSl62movC8vgDppxw-ZRXf009wbB/view?usp=sharing"
+                target="_blank" id="achLinks">
+                <h5 class="card-title">Certified for Machine Learning course from Konnexions (KIIT).</h5>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2">
+              <div class="card-item">
+                <img class="card-img-top achievmentImg" src="imgs/achievments/yif.png" alt="youthindiafoundation">
+              </div>
+              <a href="https://www.youthindiafoundation.com/" id="achLinks">
+                <h5 class="card-title">Member of YoungIndiaFellowship (YIF)</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <a href="https://drive.google.com/drive/u/1/folders/1DuhDJeHS1w9X6hy8SIdBIpEgky6uAHqL" id="achLinks" class="btn btn-secondary">
+          Other Certificates
+        </a> -->
+      </div>
+      
+      <!-- End of achievments section -->
+
+      <!-- TOP BUTTON TO navigate to the top -->
+      <div style="text-align:right; display: none;">
+        <button class="btn btn-light scrollToTop"><i class="fa fa-chevron-up" style="color: white;"></i></button>
+      </div>
+
+      <%- include('partials/footer') -%>
+
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script>
+        var demo = document.getElementById('demo');
+
+        var typewriter = new Typewriter(demo, {
+          loop: true
+        });
+
+        typewriter
+          .pauseFor(250)
+          .typeString('I am a ')
+          .typeString('Full Stack Web Developer')
+          .pauseFor(800)
+          .deleteChars(23)
+          .typeString('reelancer')
+          .pauseFor(1000)
+          .deleteChars(10)
+          .typeString('Machine Learning Enthusiast')
+          .pauseFor(1000)
+          .deleteChars(27)
+          .typeString('UI/UX Developer')
+          // .typeString('Graphics Designer')
+          .pauseFor(1000)
+          .deleteChars(15)
+          .start();
+
+        retheme();
+        // Animation on scrolling.
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar-header");
+        var scrollToTop = document.querySelector(".scrollToTop");
+
+        function myFunction() {
+          if (window.pageYOffset > 1) {
+            if ($(this).scrollTop() > 1) {
+              navbar.classList.add("sticky");
+              scrollToTop.classList.remove("fadeIn");
+              scrollToTop.classList.add("fadeOut");
+            }
+          } else {
+            navbar.classList.remove("sticky");
+            scrollToTop.classList.remove("fadeOut");
+            scrollToTop.classList.add("fadeIn");
+          }
+
+          $('.scrollToTop').click(function () {
+            $("html, body").animate({ scrollTop: (0) }, 1000, 'easeInOutQuad')
+          });
+        }
+
+      </script>
+      <!-- <script src="js/home.js"></script> -->
+</body>
+
+</html>

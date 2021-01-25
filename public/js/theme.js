@@ -2,10 +2,22 @@ function retheme() {
   var element = document.body;
   var faIcons = document.getElementsByClassName("fa");
   var navLinks = document.getElementsByClassName("nav-link");
+  var navBrand = document.getElementsByClassName('navbar-brand');
   var cardTitles = document.getElementsByClassName("card-title");
   var navbarIconToggler = document.getElementsByClassName("navbar-toggler")[0];
 
   element.classList.toggle("dark-mode");
+
+  
+/*   // Changing navbar brand - Name, coloring theme
+  let x=2;
+  while(x--)
+  if (getComputedStyle(navBrand[x]).color === "black") {
+    navBrand.style.color = "white";
+  }
+  else {
+    navBrand.style.color = "black";
+  } */
 
   // Chaning navbar links coloring theme
   for (let i = 0; i < navLinks.length; i++) {
@@ -37,12 +49,11 @@ function retheme() {
     else
       faIcons[i].style.color = "rgb(0, 0, 0)";
   }
+
 }
 
-
-
 // Omlet toggle
-if (location.pathname === '/') {
+if (location.pathname !== '/contact') {
   var select = function (s) {
     return document.querySelector(s);
   },

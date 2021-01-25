@@ -1,13 +1,15 @@
 /*  icon-bar - SIDEBAR */
 
 .icon-bar {
-  margin-top: -180pt;
+  /* margin-top: -180pt; */
+  margin-top: 180pt;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 2%;
-  text-align: right;
-  margin-left: 282pt;
+  /* width: 2%; */
+  float: right;
+  /* text-align: right; */
+  /* margin-left: 200pt; */
 }
 
 /* Style the icon bar links */
@@ -16,47 +18,46 @@
   text-align: center;
   padding: 5px;
   margin: 20px;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   color: white;
   font-size: 20px;
   opacity: 100%;
 }
 
 /* Style the social media icons with color, if you want */
-.icon-bar a{ 
+.icon-bar a {
   color: white;
   font-size: 22px;
 }
 
-.icon-bar a :hover { 
-  padding : 10px;
+.icon-bar a :hover {
+  transform: translateX(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 3px;
+  padding: 8px;
 }
 
-.fa1-whatsapp :hover, .fa1-msg :hover{
-  background: white;
-  font-size: larger;
+.fa1-whatsapp :hover,
+.fa1-msg :hover {
   color: rgb(9, 85, 74);
-  font-weight: 700;
+  background: white;
 }
 
-.fa1-facebook :hover{
-  background: #3B5998;
+.fa1-facebook :hover {
+  background: #3b5998;
   color: white;
 }
-  
-.fa1-github :hover{
+
+.fa1-github :hover {
   background: black;
   color: white;
 }
 
-.fa1-linkedin :hover{
+.fa1-linkedin :hover {
   background: #007bb5;
   color: white;
 }
 
-.fa1-behance :hover{
+.fa1-behance :hover {
   background: #bb0000;
   color: white;
 }
@@ -65,51 +66,52 @@
 /*  icon-bar3 - ON MOBILE SCREEN */
 
 /* display only on mobie screen */
-.icon-bar3{
-  display: none;            
+.icon-bar3 {
+  display: none;
   padding-bottom: 42pt;
   text-align: center;
 }
 
-.icon-bar2 a, .icon-bar3 a{ 
+.icon-bar2 a,
+.icon-bar3 a {
   color: black;
   font-size: 22px;
-  margin : 0px 8px;
+  margin: 0px 8px;
 }
 
-.icon-bar2 a :hover, .icon-bar3 a :hover  { 
-  padding : 10px;
+.icon-bar2 a :hover,
+.icon-bar3 a :hover {
+  padding: 10px;
 }
 
-.fa2-whatsapp :hover{
+.fa2-whatsapp :hover {
   background: rgb(11, 119, 103);
   color: white;
 }
 
-.fa2-facebook :hover{
-  background: #3B5998;
+.fa2-facebook :hover {
+  background: #3b5998;
   color: white;
-  padding : 20px;
+  padding: 20px;
 }
-  
-.fa2-github :hover{
+
+.fa2-github :hover {
   background: black;
   color: white;
 }
 
-.fa2-linkedin :hover{
+.fa2-linkedin :hover {
   background: #007bb5;
   color: white;
 }
 
-.fa2-behance :hover{
+.fa2-behance :hover {
   background: #bb0000;
   color: white;
 }
 
-
-@media (max-width: 575.98px) { 
-  .icon-bar3{
+@media (max-width: 575.98px) {
+  .icon-bar3 {
     margin-left: 0 0 12px;
   }
 }

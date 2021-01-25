@@ -1,95 +1,47 @@
 .navbar {
-    margin-right: 130px;
-    padding-top: 10pt;
+  margin-right: 130px;
+  padding-top: 10pt;
 }
 
-.nav-item{
-    margin-right: 24px;
-    font-size: larger;
-    font-weight: 500;
+.nav-item {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  transform: translateY(-8px);
+}
+
+.navbar-brand {
+  font-weight: bold;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    margin-top: -20px;
-    z-index: 2;
-    padding-bottom: 5px;
-    padding-top: 10pt;
-    background-color: #ffffff69;
-    width: 100%;
-  }
-
-
-  /* Omlet toggle */
-  #animationWindow {
-    width: 5%;
-    height: 5%;
-    cursor:pointer;
-  } 
-  
-  @media only screen and (max-width: 700px) {   
-   #animationWindow {
-     width: 10%;
-     height: 10%;
-     position: fixed;
-     right: 2%;
-     cursor:pointer;
-    } 
-  }
-
-
-
-
-  /* Plain toggle Switch */
-   /* .switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 23px;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #0074b8;
+  position: fixed;
+  top: 0;
+  margin-top: -20px;
+  z-index: 2;
+  padding-bottom: 5px;
+  padding-top: 10pt;
+  background-color: #ffffff69;
+  width: 100%;
 }
 
+/* Omlet toggle */
+#animationWindow {
+  width: 5%;
+  height: 5%;
+  cursor: pointer;
+}
 
-input:checked + .slider:before {
-    background-color: #403a3a;
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
-  } 
-   */
-  /* Rounded sliders */
-   /* .slider.round {
-    border-radius: 34px;
+@media only screen and (min-width: 700px) {
+}
+@media only screen and (max-width: 700px) {
+  #animationWindow {
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    right: 2%;
+    cursor: pointer;
   }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }  */
+}

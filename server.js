@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/public"));
 require("dotenv").config();
 
 app.get("/", async (req, res) => {
-  res.render("home");
+  res.render("home2");
 });
 
 app.get("/projects", async (req, res) => {
