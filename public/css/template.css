@@ -1,15 +1,16 @@
 #templateBody {
-    background-image: url('../imgs/rightBG.png');
+  background-image: url("../imgs/rightBG.png");
 }
 
 #tag {
-    margin-top: -100px;
-    margin-left: 15pt;
+  margin-top: -100px;
+  margin-left: 15pt;
 }
 
-.page-title{
-    font-family: 'Balsamiq Sans', cursive;
-    color: rgb(73, 73, 73);
-    margin-left: 20px;
-    font-weight: 600;
+.page-title {
+  font-family: "Balsamiq Sans", cursive;
+  color: rgb(73, 73, 73);
+  text-shadow: 0 0 1.5px #bdbdbd, 0 0 1.5px #bdbdbd;
+  margin-left: 20px;
+  font-weight: 600;
 }

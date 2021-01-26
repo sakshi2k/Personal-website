@@ -1,45 +1,47 @@
 .card-title {
-    font-size: 20pt;
-    color: rgb(20, 91, 94);
-    padding-top: 10px;
-    text-align: center;
+  font-size: 20pt;
+  color: rgb(20, 91, 94);
+  padding-top: 10px;
+  text-align: center;
 }
 
-.card-text{
-    font-size: 12pt;
+.card-text {
+  font-size: 12pt;
+  text-align: justify;
 }
 
 .project {
-    transition: transform .3s;
+  transition: transform 0.3s;
 }
 
-.project:hover{
-    transform: scale(1.2);
-    background-color: white;
-    border-radius: 2%;
-    box-shadow:0 100px 80px rgba(0, 0, 0, 0.62);
-    padding: 10px;
-    z-index: 20;
+.project:hover {
+  transform: scale(1.2);
+  background-color: whitesmoke;
+  color: rgb(128, 128, 128);
+  border-radius: 2%;
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.62);
+  padding: 10px;
+  z-index: 20;
 }
 
-#to-github{
-    font-size: 25pt;
-    padding-left: 20px;
-    color: rgb(71, 71, 71);
+#to-github {
+  font-size: 25pt;
+  padding-left: 20px;
+  color: rgb(71, 71, 71);
 }
 
 #to-app {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
-@media only screen and (max-width: 992px) {   
-    .card-img-top {
-        width: 70%;
-        margin-left: 18%;
-        margin-top: 40pt;
-    }
+@media only screen and (max-width: 992px) {
+  .card-img-top {
+    width: 70%;
+    margin-left: 18%;
+    margin-top: 40pt;
+  }
 
-    .project:hover{
-        transform: scale(1.05);
-    }
+  .project:hover {
+    transform: scale(1.05);
+  }
 }

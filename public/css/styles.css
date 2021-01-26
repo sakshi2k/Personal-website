@@ -344,7 +344,8 @@ body {
 
 /* Dark mode theme */
 .dark-mode {
-  background-color: black;
+  /* background-color: black; */
+  background-color: rgb(12, 12, 12);
   color: white;
 }
 
