@@ -3,14 +3,17 @@
 
 <%- include('partials/navbar') -%>
 
-<body class="view-area1">
+<body>
   <img src="imgs/Tag.png" id="tag" />
   <div class="container">
     <h1 class="page-title">Contact Me</h1>
     <img src="imgs/contact.PNG" alt="contactMe" id="contactIcon" />
+
+    <!-- Success / failure message on sending request -->
     <p id="successMsg"><%= successMessage %></p>
-    <form method="POST" class="inputForm" action="/send">
-      <!-- <form class="inputForm"> -->
+    
+    <!-- <form method="POST" class="inputForm" action="/send"> -->
+      <form class="inputForm">
       <div class="input-group">
         <input type="text" name="fname" class="form-control form-sm" placeholder="First Name" required />
         <input type="text" name="lname" class="form-control form-sm" placeholder="Last Name" required />
@@ -18,14 +21,13 @@
       <input type="text" name="email" class="form-control" placeholder="Email" required />
       <input type="text" name="subject" class="form-control" placeholder="Subject" required />
       <textarea class="form-control" name="message" placeholder="Message" rows="3" required></textarea>
-      <button type="submit" class="btn btn-secondary btn-submit">
-        <!-- onclick="sendRequest()" -->
+      <button type="submit" class="btn btn-secondary btn-submit"
+        onclick="sendRequest()">
         Send<i class="fa fa-paper-plane-o"></i>
       </button>
     </form>
   </div>
-  <div style="margin-left: 54%"><%- include('partials/social-icons'); -%></div>
-  <div class="contact-footer"><%- include('partials/footer') -%></div>
+  <%- include('partials/footer') -%>
 </body>
 <script>
 
@@ -45,10 +47,4 @@
       }
     });
   }
-  // setTimeout(() => {
-  //   if (
-  //     $("#successMsg").text() === "Congratulations. Your message has been successfully sent. Thanks for reaching out.!") {
-  //     $("#successMsg").css("color", "green");
-  //   }
-  // }, 2000)
 </script>

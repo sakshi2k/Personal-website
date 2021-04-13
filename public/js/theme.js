@@ -20,19 +20,6 @@ function retheme() {
     }
   }
 
-  // Deprecated
-/*   // Changing cardTitles (of achievments) coloring theme
-  for (let i = 0; i < cardTitles.length; i++) {
-    if (getComputedStyle(cardTitles[i]).color !== "rgb(20, 91, 94)") {   //  !==  since changed now in the above loop.
-      cardTitles[i].style.color = "rgb(128, 128, 128)";
-    }
-    else {
-      // cardTitles[i].style.color = "rgb(20, 91, 94)";
-      // cardTitles[i].style.color = "rgb(13, 140, 160)";
-      cardTitles[i].style.color = "rgb(20, 91, 94)";
-    }
-  } */
-
   for (let i = 12; i < faIcons.length; i++) {
     if (faIcons[i].style.color !== "white") {
       faIcons[i].style.color = "white";
@@ -44,8 +31,8 @@ function retheme() {
 }
 
 // Omlet toggle
-if (location.pathname !== '/contact') {
-// if (location.pathname === '/') {
+// if (location.pathname !== '/contact') {
+if (location.pathname === '/') {
   var select = function (s) {
     return document.querySelector(s);
   },
