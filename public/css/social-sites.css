@@ -38,8 +38,8 @@
 
 .fa1-whatsapp :hover,
 .fa1-msg :hover {
-  color: rgb(9, 85, 74);
-  background: white;
+  background: rgb(9, 85, 74);
+  color: white;
 }
 
 .fa1-facebook :hover {
