@@ -19,6 +19,7 @@
   background-color: whitesmoke;
   color: rgb(128, 128, 128);
   border-radius: 2%;
+  margin: 2rem 0;
   box-shadow: 0 100px 80px rgba(0, 0, 0, 0.62);
   padding: 10px;
   z-index: 20;

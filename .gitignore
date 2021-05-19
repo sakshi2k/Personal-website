@@ -1,5 +1,6 @@
 node_modules/
 portfolio_imgs.xd
+templates_ideas/
 text.txt
 views/index2.ejs
 .env
